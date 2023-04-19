@@ -4,7 +4,6 @@ import java.lang.reflect.InvocationTargetException;
 public class MatrixFactory<T> {
 
 	/**
-	 * @param size
 	 * @param defaultVal
 	 * @return an instance of Matrix<T> by applying the constructor with on
 	 *         parameter (T defaultVal)
