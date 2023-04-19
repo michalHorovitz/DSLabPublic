@@ -1,8 +1,8 @@
 package il.ac.telhai.ds.stack;
 
 public interface Stack<T> {
-    void push(T t);
-    T pop();
-    T top();
-    boolean isEmpty();
+    public void push(T t);
+    public T pop();
+    public T top();
+    public boolean isEmpty();
 }
