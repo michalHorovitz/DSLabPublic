@@ -51,6 +51,10 @@ public interface IGraph<V extends Comparable<V>, E> {
 	 * @returns The concatenation of the vertices separated by newlines Every vertex
 	 *          is printed with a comma separated list of its incident edges. The
 	 *          list is separated from the vertex with a colon.
+	 *          Each edge is printed as a pair of its edged inside {} brackets, 
+	 *          followed by its weight.
+	 *          For example:
+	 *          "A:{A,B}(2.5)\nB:{A,B}(2.5)\nC:{C,D}(4.5)\nD:{C,D}(4.5)".
 	 */
 	public String toStringExtended();
 
