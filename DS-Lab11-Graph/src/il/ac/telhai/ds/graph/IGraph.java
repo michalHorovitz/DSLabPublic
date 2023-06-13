@@ -38,7 +38,9 @@ public interface IGraph<V extends Comparable<V>, E> {
 	public E removeEdge(V u, V v);
 
 	/**
-	 * @return The weight of edge (u,v), if it exists. Otherwise return 0.
+	 * @return If the edge (u,v) exists, return the weight of edge (u,v). Otherwise,
+	 *         return 0. Note that if the labels are not of type Number or Weighted,
+	 *         a RuntimeException will be thrown.
 	 */
 	public double getWeight(V u, V v);
 
@@ -50,9 +52,8 @@ public interface IGraph<V extends Comparable<V>, E> {
 	/**
 	 * @returns The concatenation of the vertices separated by newlines Every vertex
 	 *          is printed with a comma separated list of its incident edges. The
-	 *          list is separated from the vertex with a colon.
-	 *          Each edge is printed as a pair of its edged inside {} brackets, 
-	 *          followed by its weight.
+	 *          list is separated from the vertex with a colon. Each edge is printed
+	 *          as a pair of its edged inside {} brackets, followed by its weight.
 	 *          For example:
 	 *          "A:{A,B}(2.5)\nB:{A,B}(2.5)\nC:{C,D}(4.5)\nD:{C,D}(4.5)".
 	 */
