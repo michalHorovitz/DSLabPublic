@@ -88,6 +88,10 @@ public abstract class ListTest<T> {
 		dList.insert(newInstance3);
 		assertEquals(newInstance3, dList.getCursor());
 		assertEquals(newInstance2, dList.getNext());
+		
+		dList.goToEnd();
+		assertEquals(newInstance3, dList.getPrev());
+
 	}
 
 	@Test
