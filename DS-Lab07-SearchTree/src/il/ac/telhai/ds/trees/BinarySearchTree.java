@@ -2,14 +2,14 @@ package il.ac.telhai.ds.trees;
 
 public class BinarySearchTree<T extends Comparable<T>> {
 
-	BstNode root;
+	private BstNode root;
 
 	// Binary Search Tree Node
-	class BstNode {
-		T val;
-		BstNode left, right;
+	private class BstNode {
+		private T val;
+		private BstNode left, right;
 
-		public BstNode(T val) {
+		private BstNode(T val) {
 			this.val = val;
 			left = null;
 			right = null;
