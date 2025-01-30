@@ -15,8 +15,10 @@ public interface IGraph<V extends Comparable<V>, E> {
 	public E getEdge(V u, V v);
 
 	/**
-	 * Add a new edge if none exists between the two vertices Otherwise retain the
-	 * existing edge and replace the item with the given one. If the vertices u or v
+	 * Add a new edge if none exists between the two vertices. Otherwise retain the
+	 * existing edge and replace the item with the given one. 
+	 * The returned value is the previous label (if (u,v) is a new edge then the returned value is null).
+	 * If the vertices u or v
 	 * do not exist, add them to the graph.
 	 */
 	public E putEdge(V u, V v, E edgeLabel);
