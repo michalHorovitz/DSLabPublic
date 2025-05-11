@@ -52,7 +52,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	/**
 	 * Adds the object value to the tree as a leaf according to the parameter.
 	 * 
-	 * @param val
+	 * @param val - should be no null
 	 * @return True, if the element was added. Otherwise false.
 	 */
 	public boolean add(T val) {

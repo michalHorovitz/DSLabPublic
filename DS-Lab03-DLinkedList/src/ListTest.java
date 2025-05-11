@@ -41,7 +41,6 @@ public abstract class ListTest<T> {
 	 *         Object();".
 	 */
 
-
 	@Test
 	public void testGetParameterInstance() {
 		if ((newInstance1.equals(newInstance2)) || (newInstance1.equals(newInstance3))
@@ -88,7 +87,7 @@ public abstract class ListTest<T> {
 		dList.insert(newInstance3);
 		assertEquals(newInstance3, dList.getCursor());
 		assertEquals(newInstance2, dList.getNext());
-		
+
 		dList.goToEnd();
 		assertEquals(newInstance3, dList.getPrev());
 
@@ -259,8 +258,7 @@ public abstract class ListTest<T> {
 
 	@Test
 	public void testHasNextAndPrev() {
-		//TODO Add tests for HasNext and HasPrev methods.
+		// TODO Add tests for HasNext and HasPrev methods.
 	}
-
 
 }
